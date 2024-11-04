@@ -1,0 +1,50 @@
+.modalWrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.active {
+    display: flex;
+}
+
+.hasShadow {
+    background: rgba(0, 0, 0, .75);
+}
+
+
+.modalContent {
+    position: relative;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 25px;
+    max-width: 50%;
+    box-shadow: 0 40px 80px rgba(38, 36, 60, 0.37);
+}
+.close {
+    content: "";
+    position: absolute;
+    top: .75rem;
+    right: .75rem;
+    width: 16px;
+    height: 16px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    color: gray;
+}
+
+@media (max-width: 767px) {
+    .modalContent {
+        max-width: 80%;
+        padding: 2rem;
+    }
+    .modalContent > div {
+        padding: 1rem 1rem 2rem !important;
+    }
+}
